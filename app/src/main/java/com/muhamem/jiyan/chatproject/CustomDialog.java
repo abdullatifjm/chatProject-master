@@ -108,10 +108,6 @@ public class CustomDialog extends Dialog implements android.view.View.OnClickLis
             }
             }
         });
-//        yes = (Button) findViewById(R.id.btn_yes);
-//        no = (Button) findViewById(R.id.btn_no);
-//        yes.setOnClickListener(this);
-//        no.setOnClickListener(this);
 
     }
 
