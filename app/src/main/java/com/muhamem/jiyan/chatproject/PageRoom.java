@@ -22,11 +22,9 @@ public class PageRoom extends AppCompatActivity {
     ListView listView;
     private ArrayList<ModuleGetterRooms> rooms;
     private DatabaseReference mMyRef;
-//    private Dialog Dialog;
     private CustomDialog customDialog;
     private String idroom ;
     private ProgressBar progressRoom;
-//    private LinearLayout layoutDialog ;
 
 
 
@@ -37,8 +35,7 @@ public class PageRoom extends AppCompatActivity {
         progressRoom = (ProgressBar) findViewById(R.id.progress_room);
         progressRoom.setVisibility(View.VISIBLE);
 
-//        Dialog = new Dialog(this);
-//        layoutDialog = new LinearLayout(this);
+
         mMyRef = FirebaseDatabase.getInstance().getReference();
 
 
