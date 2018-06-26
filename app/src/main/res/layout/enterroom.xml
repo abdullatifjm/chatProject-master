@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/lineDialog"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/LogInAsAGuest"
+        android:layout_gravity="center"
+        android:textColor="#000000"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guest"
+        android:id="@+id/radioGuest"
+        android:checked="true"/>
+    <RadioButton
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioMember"
+        android:text="@string/member"/>
+</RadioGroup>
+    <EditText
+        android:layout_margin="8dp"
+        android:id="@+id/nikname"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="name"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+    <EditText
+        android:layout_margin="8dp"
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="@string/passowrd"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/enter"
+        android:layout_marginBottom="8dp"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/loginbutton_selector"
+        android:text="SignIn"/>
+
+</LinearLayout>

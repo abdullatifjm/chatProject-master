@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">chatProject</string>
+
+
+    <string name="facebook_app_id">210937702837588</string>
+    <string name="fb_login_protocol_scheme">fb210937702837588</string>
+    <string name="passowrd">Passowrd</string>
+    <string name="poweredby">powered by JmRoom</string>
+    <string name="roomName">Room Name</string>
+    <string name="member">Member</string>
+    <string name="guest">Guest</string>
+    <string name="LogInAsAGuest">Log in as a guest</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
