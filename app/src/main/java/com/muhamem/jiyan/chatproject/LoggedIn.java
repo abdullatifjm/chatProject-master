@@ -34,9 +34,7 @@ public class LoggedIn extends AppCompatActivity {
     private ImageView msndButton;
     private EditText mMssgtxt;
     private FirebaseAuth mAuth;
-    //private String mEmail;
     private String mssg , getName , name ,id , uid;
-//    private FirebaseDatabase mDatabase;
     private DatabaseReference mMyRef;
     ListView chatListView , usersListView;
     ArrayAdapter<String> chatArrayAdapter , usersArrayAdapter;
@@ -55,12 +53,9 @@ public class LoggedIn extends AppCompatActivity {
         msndButton = (ImageView) findViewById( R.id.btnsnd );
         mMssgtxt = (EditText) findViewById( R.id.ditTxtMssg );
         mAuth = FirebaseAuth.getInstance();
-//        mDatabase = FirebaseDatabase.getInstance();
         mMyRef = FirebaseDatabase.getInstance().getReference(id);
-        //mEmail = mAuth.getCurrentUser().getEmail();
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         toolbar.setTitle(name);
-//        setTitle(name);
         messages = new ArrayList<String>();
         chatListView =(ListView)findViewById(R.id.listView_chat);
         chatArrayAdapter = new ArrayAdapter<String>(this,R.layout.custom_list_itm,R.id.sndmssg, messages);
@@ -73,14 +68,7 @@ public class LoggedIn extends AppCompatActivity {
 
 
 
-//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-//                this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-//        drawer.addDrawerListener(toggle);
-//        toggle.syncState();
-//
-//        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-//        navigationView.setNavigationItemSelectedListener(this);
+
 
         msndButton.setOnClickListener(new View.OnClickListener() {
             @Override
